@@ -5,9 +5,23 @@ library(ape)
 library(phangorn)
 library(phytools)
 library(geiger)
-"A,B,C,D,Z"
+
 # Create some dummy string dataset
 
 text.string<- "(((((((cow, pig),whale),(bat,(lemur,human))),(robin,iguana)),coelacanth),gold_fish),shark);" 
 
 vert.tree<-read.tree(text=text.string)
+
+# Plot the phylogenetic tree-Rooted Plot
+# Regenerate same plot using color "Red", and add title at the top stating "Rooted Phylogenetic Tree".
+plot(vert.tree,no.margin=TRUE,edge.width=2, edge.color="Red", main="Rooted Phylogenetic Tree")
+
+
+
+
+
+
+
+
+
+
